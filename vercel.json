@@ -1,14 +1,15 @@
 {
-  "builds": [{ "src": "api/app.py", "use": "@vercel/python" }],
-  "routes": [{ "src": "/(.*)", "dest": "api/app.py" }],
   "functions": {
     "api/app.py": {
+      "runtime": "@vercel/python",
       "includeFiles": [
         "api/excel_utils/**",
         "api/common_utils/**",
         "api/email_utils/**",
-        "api/linkedin_utils/**"
+        "api/linkedin_utils/**",
+        "api/leads.json"
       ]
     }
-  }
+  },
+  "routes": [{ "src": "/(.*)", "dest": "api/app.py" }]
 }
