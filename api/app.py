@@ -4,8 +4,8 @@ from werkzeug.utils import secure_filename
 import os
 import traceback
 
-from .excel_utils.excel_processor import process_excel_file
-from .linkedin_utils.linkedin_mock import get_linkedin_profiles
+from excel_utils.excel_processor import process_excel_file
+from linkedin_utils.linkedin_mock import get_linkedin_profiles
 from email_utils.email_generator import generate_personalized_email
 from email_utils.email_sender import send_email, schedule_followup
 from linkedin_utils.lead_manager import save_lead, get_leads
@@ -20,7 +20,9 @@ ALLOWED_EXTENSIONS = {'xlsx', 'xls', 'csv'}
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
+    
 # Helper to check file extension
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
