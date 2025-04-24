@@ -1,0 +1,5 @@
+uploads/
+
+.env
+
+api/**/__pycache__/
