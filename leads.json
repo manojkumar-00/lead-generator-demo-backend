@@ -1,0 +1,21 @@
+[
+  {
+    "contact": {
+      "id": "57135",
+      "name": "Neha Srivastava",
+      "designation": "Associate Director Of Sales at Flipkart",
+      "email": "dummy@gmail.com",
+      "company": "Flipkart"
+    },
+    "email_sent": true,
+    "email_content": {
+      "subject": "Quick question about Flipkart's lead generation approach",
+      "body": "Hi Neha Srivastava,\n\nI recently came across Flipkart and was impressed by your recent achievements in the market. Given your role as Associate Director Of Sales, I thought you might be interested in how AI is transforming B2B lead generation.\n\nWe've helped companies similar to yours implement AI-driven lead generation strategies that have transformed their sales pipeline. By analyzing your ideal customer profile and leveraging our vast dataset, we create hyper-personalized outreach campaigns that consistently outperform traditional methods.\n\nIf this sounds interesting, I'd be happy to share a case study from a company in your industry. Just let me know what would be most valuable for you.\n\nThank you for your time,\n\nWarm regards,\nMichael Chen\nPartnership Director\nAI Lead Gen Solutions\nmchen@aileadgen.com\n(555) 987-6543"
+    },
+    "followup_date": "2025-05-01T13:30:47.040663",
+    "status": "Contacted",
+    "created_at": "2025-04-24T13:30:47.040748",
+    "updated_at": "2025-04-24T13:30:47.040748",
+    "id": "1745481647"
+  }
+]

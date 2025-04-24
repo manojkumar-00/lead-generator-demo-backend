@@ -15,10 +15,11 @@ app = Flask(__name__)
 CORS(app)
 
 # Use /tmp for file saving (required on Vercel)
-UPLOAD_FOLDER = '/tmp'
+UPLOAD_FOLDER = 'tmp'
 ALLOWED_EXTENSIONS = {'xlsx', 'xls', 'csv'}
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+
 
 # Helper to check file extension
 def allowed_file(filename):
@@ -55,6 +56,7 @@ def upload_excel():
         return jsonify({'companies': companies})
 
     except Exception as e:
+        print(e)
         return jsonify({'error': str(e), 'trace': traceback.format_exc()}), 500
 
 @app.route('/contacts', methods=['POST'])
